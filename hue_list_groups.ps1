@@ -6,6 +6,6 @@ $groups = Invoke-RestMethod -Method 'Get' -Uri $endpoint -TimeoutSec 5
 
 $groups.PSObject.Properties | ForEach-Object {
     @{'GroupID' = $_.name; 'GroupName' = $_.value.name; 'GroupType' = $_.value.type}
-} | Export-Clixml $PSScriptRoot\all_groups.xml
+} | Export-Clixml $PSScriptRoot\hue_groups.xml
 
 exit
