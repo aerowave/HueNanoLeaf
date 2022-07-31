@@ -62,8 +62,10 @@ To do this in Aitum, your Action would be Aitum -> Execute shell script and the 
 
 ![image](https://user-images.githubusercontent.com/35155214/182033521-95d6c8fb-ff10-4238-a741-432c54b1620a.png)
 
+### 5. Extras
+**hue_alert.ps1** allows you to make your lights flash for 15 seconds (this is using the bridge's built-in flash function). Pass the Room to flash as the parameter for this script.
 
-## Nanoleaf
+## Nanoleaf (in progress)
 The Nanoleaf folder contains the following scripts:
 
 **authorisation.ps1** - This script is used to create a credential file that authenticates the scripts to your Nanoleaf device. It also stores your Nanoleaf device IP address.
