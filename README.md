@@ -8,15 +8,6 @@ It boils down to a handful of scripts that simply talk to the device on your net
 Everything should be kept self-contained in a folder, some scripts rely on other files in the same directory to function.
 
 ## Hue
-The Hue folder contains the following scripts:
-
-**authorisation.ps1** - This script is used to create a credential file that authenticates the scripts to your Hue bridge. It also stores your Bridge IP address.
-
-**list_groups.ps1** - This gets a list of all the Groups in your Hue system, this is used to identify Scenes as you may have more than one Scene with the same name in different groups. Results are saved to a text file for later use. You will need to run this each time you add/change lights in your Hue system.
-
-**list_scenes.ps1** - This gets a list of all the Scenes in your Hue system for recalling on command. Results are saved to a text file for later use. You will need to run this each time you add/change scenes on your Hue system.
-
-**hue_switch.ps1** - This is the main script that handles switching scenes. It has two input parameters, the Group name and the Scene name.
 
 ### 1. Authorisation
 Before doing this, I recommend you set a static IP address for your bridge, as if the IP changes, the script will no longer find your bridge. 
