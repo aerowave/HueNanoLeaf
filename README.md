@@ -5,6 +5,8 @@ This is a personal project to get a piece of awesome streaming software called A
 
 It boils down to a handful of scripts that simply talk to the device on your network and tell it to recall a scene.
 
+Everything should be kept self-contained in a folder, some scripts rely on other files in the same directory to function.
+
 
 ## Hue
 The Hue folder contains the following scripts:
@@ -18,6 +20,12 @@ The Hue folder contains the following scripts:
 **hue_switch.ps1** - This is the main script that handles switching scenes. It has two input parameters, the Group name and the Scene name.
 
 ### 1. Authorisation
+First you will need to allow the script to talk to your Hue bridge. 
+Before doing this, I recommend you set a static IP address for your bridge, as if the IP changes, the script will no longer find your bridge. 
+Once you have done that, run the Authorisation.ps1 script. 
+It will prompt you for the bridge IP. If the connection is successful, this is stored in **hue_device_ip.txt**. 
+You will then need to press the button on your bridge (hold for a second or two just to be sure), then come back to the script and press Enter. This will start the authentication process. 
+If successful a message will show and the user key will be saved to **hue_auth_token.txt**.
 
 ### 2. Create Group listing
 
