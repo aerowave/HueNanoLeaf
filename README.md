@@ -20,9 +20,11 @@ The Hue folder contains the following scripts:
 **hue_switch.ps1** - This is the main script that handles switching scenes. It has two input parameters, the Group name and the Scene name.
 
 ### 1. Authorisation
-First you will need to allow the script to talk to your Hue bridge. 
 Before doing this, I recommend you set a static IP address for your bridge, as if the IP changes, the script will no longer find your bridge. 
-Once you have done that, run the Authorisation.ps1 script. 
+
+Once you have done that, run the Authorisation.ps1 script to start the process of allowing the script to talk to your Hue bridge.
+
+
 It will prompt you for the bridge IP. If the connection is successful, this is stored in **hue_device_ip.txt**. 
 You will then need to press the button on your bridge (hold for a second or two just to be sure), then come back to the script and press Enter. This will start the authentication process. 
 If successful a message will show and the user key will be saved to **hue_auth_token.txt**.
